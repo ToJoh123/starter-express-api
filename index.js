@@ -8,4 +8,8 @@ app.all('/users', (req, res) => {
     console.log("Just got a request!")
     res.send('users!')
 })
+app.all('/api', (req, res) => {
+    console.log("Just got a request!")
+    res.send('api!')
+})
 app.listen(process.env.PORT || 3000)
