@@ -13,7 +13,7 @@ app.all('/api', (req, res) => {
 
     console.log("Just got a request!")
 
-    const db = process.env.DB_HOST
+    const db = process.env.CYCLIC_URL
     res.send(db)
 })
 app.listen(process.env.PORT || 3000)
